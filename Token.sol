@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 // Constructor to initialize token name, symbol, and mint initial supply
 contract MyToken is ERC20 {
-    constructor() ERC20("MyToken", "MTK") {
+    constructor() ERC20("TestToken", "TTK") {            // Renamed token for clarity in testing environments
         _mint(msg.sender, 500000 * 10 ** decimals());
     }
 }
