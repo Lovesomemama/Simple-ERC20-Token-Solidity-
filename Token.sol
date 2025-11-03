@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+// Importing standard ERC20 from OpenZeppelin for token functionality
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
+// Constructor to initialize token name, symbol, and mint initial supply
 contract MyToken is ERC20 {
     constructor() ERC20("MyToken", "MTK") {
         _mint(msg.sender, 500000 * 10 ** decimals());
